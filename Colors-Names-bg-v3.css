@@ -74,10 +74,6 @@
   background-color: teal;
 }
 
-.bg-indigo {
-  background-color: indigo;
-}
-
 .bg-violet {
   background-color: violet;
 }
@@ -320,8 +316,4 @@
 
 .bg-tomato {
   background-color: tomato;
-}
-
-.bg-violet {
-  background-color: violet;
 }
