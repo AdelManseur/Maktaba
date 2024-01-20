@@ -150,7 +150,7 @@ var maktaba = (function () {
       const elementToAddEventListener = document.getElementById(id);
       if (elementToAddEventListener) {
         elementToAddEventListener.addEventListener("click", function() {
-          remove(id);
+          elementToAddEventListener.remove(id);
         })
       }
       else {
