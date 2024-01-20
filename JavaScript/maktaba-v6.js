@@ -1,7 +1,7 @@
 var maktaba = (function () {
     // Private helper function for internal use
     function validateElementName(name, options = {}) {
-      const { id = 'maktaba', className = 'gray', innerHTML = " ", isCreated = true } = options;
+      const { id = 'maktaba', className = 'gray', innerHTML = " ", img = " ", isCreated = true } = options;
   
       if (typeof name !== 'string') {
         throw new Error('Input must be a string');
@@ -29,6 +29,10 @@ var maktaba = (function () {
       if (typeof innerHTML !== 'string') {
         throw new Error('innerHTML must be a string');
       }
+
+      if (typeof img !== 'string') {
+        throw new Error('Img must be a string');
+      }
   
       if (typeof isCreated !== 'boolean') {
         throw new Error('isCreated must be a boolean');
@@ -39,7 +43,7 @@ var maktaba = (function () {
     return {
       create: function (name, options = {}) {
         validateElementName(name, options);
-        const { id = 'maktaba', className = 'gray', innerHTML = " ", isCreated = true } = options;
+        const { id = 'maktaba', className = 'gray', innerHTML = " ", img = " ", isCreated = true } = options;
   
         let createdElement;
   
@@ -126,7 +130,11 @@ var maktaba = (function () {
   
         createdElement.innerHTML = innerHTML;
         document.body.appendChild(createdElement);
-  
+        
+        const image = document.createElement('img');
+        image.src = img;
+        createdElement.appendChild(image);
+
         if (!isCreated) {
           createdElement.remove();
         }
