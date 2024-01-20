@@ -313,3 +313,7 @@
 .bg-tomato {
   background-color: tomato;
 }
+
+.bn {
+  border: none;
+}
