@@ -156,10 +156,6 @@ var maktaba = (function () {
       else {
         console.warn(`Element with ID: '${id}', not found.`);
       }
-     },
-     remove: function (id) {
-      const elementToAddEventListener = document.getElementById(id);
-      elementToRemove.remove();
      }
     };
   })();
