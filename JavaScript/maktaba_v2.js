@@ -145,6 +145,17 @@ var maktaba = (function () {
       else{
        console.warn(`Element with ID: '${id}', not found.`);
       }
+     },
+     clickRemoveMe: function (id) {
+      const elementToAddEventListener = document.getElementById(id);
+      if (elementToAddEventListener) {
+        elementToAddEventListener.addEventListener("click", function() {
+          remove(id);
+        })
+      }
+      else {
+        console.warn(`Element with ID: '${id}', not found.`);
+      }
      }
     };
   })();
