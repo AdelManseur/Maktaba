@@ -8,6 +8,7 @@ var maktaba = (function () {
         square: function (x) { validateNumber(x); return x * x; },
         cube: function (x) { validateNumber(x); return x * x * x; },
         quartic: function (x) { validateNumber(x); return x * x * x * x; },
+        quintic: function (x) { validateNumber(x); return x * x * x * x * x; },
         squareRoot: function (x) { validateNumber(x); return Math.sqrt(x); }
     };
 })();
