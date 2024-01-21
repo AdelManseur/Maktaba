@@ -10,6 +10,12 @@ var maktaba = (function () {
                 validateNember(x);
 
                 return x*x;
+            },
+
+            squareRoot: function (x) {
+                validateNember(x);
+
+                return sqrt(x);
             }
         };
 })();
