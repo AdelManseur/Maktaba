@@ -43,7 +43,7 @@ var maktaba = (function () {
     return {
       create: function (name, options = {}) {
         validateElementName(name, options);
-        const { id = 'maktaba', className = 'gray', innerHTML = " ", img = " ", isCreated = true } = options;
+        const { id = ' ', className = ' ', innerHTML = " ", img = " ", isCreated = true } = options;
   
         let createdElement;
   
