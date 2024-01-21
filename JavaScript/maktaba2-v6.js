@@ -15,7 +15,7 @@ var maktaba = (function () {
             squareRoot: function (x) {
                 validateNember(x);
 
-                return sqrt(x);
+                return Math.sqrt(x);
             }
         };
 })();
