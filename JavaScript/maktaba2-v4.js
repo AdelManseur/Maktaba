@@ -1,8 +1,9 @@
 var maktaba = (function () {
     function validateNember(x) {
-        if ( typeof x !== 'nember' ) {
+        if ( typeof x !== 'number' ) {
             console.error('Input should be a nember');
         }
+     }   
 
         return {
             square: function (x) {
@@ -11,5 +12,4 @@ var maktaba = (function () {
                 return x*x;
             }
         };
-    }
 })();
